@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ./partials/head %>
+    </head>
+
+    <body>
+        <% include ./partials/sidePanel %>
+        <section id="main">
+            <h1>Add A New Instance</h1>
+            <div id="Instance-form">
+                <form>
+                    <div class="fields">
+                        <div class="cover">
+                            <label for="courseName">Course</label>
+                            <input type="text" name="course" placeholder="Course" required='true' /> <br />
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="cover">
+                            <label for="courseName">Course Code</label>
+                            <input type="text" name="courseCode" placeholder="Course Code" required="true" /> <br />
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="cover">
+                            <label for="courseName">Course Professor</label>
+                            <input type="text" name="professor" placeholder="Professor's Name" required='true' /> <br />
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="cover">
+                            <label for="courseName">Course Status</label>
+                            <input type="text" name="status" placeholder="Status" required='true' /> <br />
+                        </div>
+                    </div>
+                    <input type="submit" value="Create Course" />
+                </form>
+            </div>
+        </section>
+    </body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ./partials/head %>
+    </head>
+
+    <body>
+        <% include ./partials/header %>
+        <% include ./partials/sidePanel %>
+        <div id="main">
+            <h2>Professor's Name: </h2> <br />
+            <span><%= data.name %></span>
+
+            <h2>Professor's Status: </h2> <br />
+            <span><%= data.status %></span>
+
+            <h2>Professor's Date of Birth: </h2> <br />
+            <span><%= data.dateOfBirth %></span>
+
+            <h2>Professor's Experience: </h2> <br />
+            <span><%= data.experience %></span>
+        </div>
+    </body>
+</html>

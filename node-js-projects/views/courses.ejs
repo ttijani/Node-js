@@ -1,0 +1,26 @@
+<!-- V I E W   O F   A L L   D I F F E R E N T   C O U R S E S -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ./partials/head %>
+    </head>
+
+    <body>
+        <% include ./partials/header %>
+        <% include ./partials/sidePanel %>
+
+        <div id="main">
+            <div id="course">
+                <ul>
+                    <li>
+                        <h3>All Courses</h3>
+                        <span><%= data.getAllCourses %></span>
+                        <h3>All Courses This Semester</h3>
+                        <span><%= data.getAllAvailableCourses %></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ./partials/head %>
+    </head>
+
+    <body>
+        <% include ./partials/header %>
+        <% include ./partials/sidePanel %>
+        <section id="main">
+            <h1>Add A Professor</h1>
+            <div id="Instance-form">
+                <form method="post" action="">
+                    <div class="fields">
+                        <div class="cover">
+                            <label for="profName">Professor's Name</label>
+                            <input type="text" name="profName" placeholder="Professor's Name" required='true' /> <br />
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="cover">
+                            <label for="profStatus">Professor's Availability</label>
+                            <select name="profStatus" placeholder="available" required="true">
+                                <option value="available">available</option>
+                                <option value="unavailable">unavailable</option>
+                            </select> <br />
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="cover">
+                            <label for="doB">Date of Birth</label>
+                            <input type="text" name="doB" placeholder="dd/mm/yyyy" required='true' /> <br />
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="cover">
+                            <label for="exp">Professor's Experience</label>
+                            <input type="text" name="exp" placeholder="professor's experience" required='true' /> <br />
+                        </div>
+                    </div>
+                    <input type="submit" value="Create Course" />
+                </form>
+            </div>
+        </section>
+    </body>
+
+</html>

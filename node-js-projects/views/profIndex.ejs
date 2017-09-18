@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ./partials/head %>
+    </head>
+
+    <body>
+        <% include ./partials/header %>
+        <% include ./partials/sidePanel %>
+
+        <div id="main">
+            <h1>Professor Index</h1>
+            <h3 class="label">Number of Professors: </h3> <br />
+            <span><%= data.getAllProfs %></span>
+
+            <h1>Number of Available Professors</h1>
+            <h3 class="label">Number of Professors teaching this semester: </h3> <br />
+            <span><%= data.getAllAvailableProfs %></span>
+        </div>
+    </body>
+</html>

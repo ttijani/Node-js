@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ./partials/head %>
+    </head>
+
+    <body>
+        <% include ./partials/header %>
+
+        <div id="main" class="find-update">
+            <form method="post" action="">
+                <input type="text" placeholder="Course Name" name="course" required=true />
+                <input type="submit" value="Search" />
+            </form>
+
+            <form method="post" action="">
+                <select name="courseToUpdate" placeholder="Select Course">
+                    <% for (var i = 0; i < data.length; i++) { %>
+                        <option value="<%= data[i].name %>"><%= data[i].name %></option>
+                    <% } %>
+                </select>
+            </form>
+
+        </div>
+    </body>
+
+</html>

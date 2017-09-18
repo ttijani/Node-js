@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ./partials/head %>
+    </head>
+
+    <body>
+        <% include ./partials/header %>
+        <% include ./partials/sidePanel %>
+        <div id="main">
+            <div id="redirect-container">
+                <p class="redirect add">
+                    Add A Course
+                </p>
+                <p class="redirect update">
+                    Update A Course
+                </p>
+                <p class="redirect delete">
+                    Delete A Course
+                </p>
+            </div>
+
+            <div id="course">
+                <% for (var i = 0; i < data.length; i++) { %>
+                    <ul>
+                        <li>
+                            <h2>Course Name: </h2> <br />
+                            <span><%= data[i].name %></span>
+
+                            <h2>Course Status: </h2> <br />
+                            <span><%= data[i].status %></span>
+
+                            <h2>Course Code: </h2> <br />
+                            <span><%= data[i].courseCode %></span>
+
+                            <h2>Professor: </h2> <br />
+                            <span><%= data[i].prof.name %></span>
+
+                            <h2>Credit Hours: </h2> <br />
+                            <span><%= data[i].creditHours %></span>
+                        </li>
+                    </ul>
+                <% } %>
+            </div>
+        </div>
+    </body>
+</html>

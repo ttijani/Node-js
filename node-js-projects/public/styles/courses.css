@@ -1,0 +1,196 @@
+body {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: black;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.side-panel {
+    width: 20%;
+    background: gray;
+    float: left;
+    height: 1000px;
+    text-align: left;
+}
+
+ul, li {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    background: #00004d;
+    padding: 30px;
+    font-family: 'Cormorant Garamond';font-size: 22px;
+    border: 2px solid white;
+}
+
+label {
+    /*float: left;*/
+    position: absolute;
+    top: -15px;
+    background: #00004d;
+    padding: 5px;
+}
+
+li, input[type=text], select {
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+span {
+    color: gold;
+    font-family: 'Aldrich';font-size: 22px;
+}
+
+.side-panel ul {
+    background: gold;
+}
+
+li {
+    background: #000066;
+}
+
+.side-panel li {
+    border-radius: 0px;
+}
+
+.side-panel li:hover {
+    transform: translateX(10px);
+    border-bottom: red;
+}
+
+h3 {
+    color: white;
+}
+
+input[type=text], select[name=status] {
+    margin: 5px;
+    width: 80%;
+}
+
+.fields {
+    border-radius: 5px;
+    border: 1px solid white;
+    position: relative;
+    padding: 30px 0px 0px;
+    margin-bottom: 30px;
+}
+
+input[type=submit], select {
+    padding: 10px;
+
+}
+
+input[type=submit], .find-update input[type=text] {
+    padding: 20px;
+    background: gold;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-family: 'Armata';
+    font-size: 1.2em;
+    margin-left: 0px;
+}
+
+select {
+    padding: 50px;
+}
+
+#main {
+    background: #000066;
+    color: red;
+    float: right;
+    min-width: 70%;
+    margin: 0px 5%;
+    text-align: center;
+}
+
+#main::after, .header::after, #redirect-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.redirect {
+    background: gold;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    font-family: 'Armata';
+    font-size: 2em;
+    letter-spacing: 2px;
+    border-radius: 7px;
+    width: 31.3%;
+    margin: 1%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.list .redirect {
+    width: 80%;
+    margin: 10px 10%;
+}
+
+#main p:hover, input[type=submit]:hover {
+    -webkit-box-shadow: 1px 1px 30px 8px rgba(204,163,0,0.71);
+    -moz-box-shadow: 1px 1px 30px 8px rgba(204,163,0,0.71);
+    box-shadow: 1px 1px 30px 8px rgba(204,163,0,0.71);
+}
+
+.header {
+    height: 10%;
+    width: 100%;
+    background: white;
+}
+
+.header img {
+    float: left;
+    height: 100%;
+    padding-left: 4%;
+    width: 12%;
+}
+
+.header h1 {
+    margin-top: 0;
+    padding-top: 1%;
+    padding-left: 9%;
+    text-align: center;
+}
+
+.side-panel i {
+    transform: translateX(-40px);
+    transition: all 3s linear;
+    z-index: 1;
+}
+
+#main.find-update {
+    width: 100%;
+    margin: 0;
+}
+
+.find-update form {
+    padding: 200px 0px;
+}
+
+.find-update input[type=text] {
+    background: white;
+    margin-right: 0px;
+}

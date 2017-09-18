@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ./partials/head %>
+    </head>
+
+    <body>
+        <!-- <% include ./partials/sidePanel %> -->
+        <div class="side-panel">
+            <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    All courses
+                </li>
+                <li>
+                    All professors
+                </li>
+            </ul>
+        </div>
+        <section id="main">
+            <h1>COURSES AVAILABLE NOW</h1>
+            <div id="course">
+                <% for (var i = 0; i < courseInstanceList.length; i++) { %>
+                    <ul>
+                        <li>
+                            <%= courseInstanceList[i] %>
+                        </li>
+                    </ul>
+                <% } %>
+            </div>
+        </section>
+    </body>
+
+</html>
