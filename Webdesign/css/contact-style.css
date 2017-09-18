@@ -1,0 +1,84 @@
+body {
+    margin: 0px;
+}
+
+#landing {
+    max-width: 100%;
+    height: 100%;
+    background: grey;
+    background-image: url('../pictures/contact-spread.jpg');
+}
+
+#head {
+    margin: 0px;
+    color: white;
+    padding: 250px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.head-spread {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.contact-bar {
+    max-width: 100%;
+    height: 200px;
+    background: black;
+    padding: 20px;
+}
+
+#icons {
+    height: 100%;
+    margin: 10px auto;
+    /*padding: 50px;*/
+}
+
+.choices {
+    height: 100%;
+    float: left;
+    margin: 0px 11%;
+}
+
+.contact-bar img {
+    height: 75%;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.icons:after {
+    content: "";
+    display: "block";
+    clear: both;
+}
+
+.contact-bar p {
+    color: red;
+    font-size: 20px;
+    border: 1px solid gold;
+    text-align: center;
+}
+
+.main-page {
+    width: 100%;
+    background: grey;
+}
+
+#staff img {
+    height: 200px;
+}
+
+.staff-icon1, .staff-icon2, .staff-icon3 {
+    float: left;
+    width: 24%;
+    background: grey;
+    padding: 3%;
+    margin: 1.6%;
+}
+
+.main-page:after {
+    content: "";
+    display: "block";
+    clear: both;
+}

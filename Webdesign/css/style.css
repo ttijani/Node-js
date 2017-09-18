@@ -1,0 +1,177 @@
+body {
+    font-family: verdana;
+    color: burlywood;
+    width: 100%;
+    background: white;
+    margin: 0px;
+}
+
+#banner img {
+    background: skyblue;
+    width: 100%;
+    margin: 0px;
+    height: 800px;
+}
+
+#main-menu h1 {
+    font-family: Arial;
+    font-size: 30px;
+    text-align: center;
+    background: goldenrod;
+    color: white;
+    padding: 20px;
+    margin: 0px;
+}
+
+#links {
+    margin: 0px;
+    background: gold;
+    padding: 20px;
+}
+
+#links ul {
+    margin: 0px;
+    text-align: right;
+    list-style-type: none;
+}
+
+#links li {
+    display: inline-block;
+}
+
+#links a {
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#links a:hover{
+    color: skyblue;
+    background: white;
+}
+
+#links a:active{
+    color: orange;
+}
+
+#links a.visited{
+    color: purple;
+}
+
+#description {
+    margin: 0px auto;
+    margin-bottom: 60px;
+    background: whitesmoke;
+    width: 80%;
+}
+
+#description h2 {
+    background: white;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Impact;
+    padding: 10px;
+    font-size: 30px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+#images {
+    text-align: center;
+}
+
+#images img {
+    width: 29%;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+#tour {
+    width: 100%;
+    height: 500px; 
+    background: black;
+    background-image: url('../pictures/Screen Shot 2016-09-09 at 8.55.46 PM.png');
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+}
+
+#button {
+    padding: 230px 0px;
+}
+
+#tour a.tour-link {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: red;
+    border: 1px solid gold;
+    display: block;
+    margin: 0px auto;
+    width: 10%;
+    text-align: center;
+}
+
+#tour a.tour-link:hover {
+    color: white;
+    background: gold;
+}
+
+#floats {
+    background: chocolate;
+    text-align: center;
+}
+
+.visitors {
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    width: 19%;
+    color: whitesmoke;
+    border: 1px solid gold;
+    margin: 1.9%;
+    margin-left: 6%;
+    padding: 35px;
+    float: left;
+}
+
+.visitors:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footnote {
+    clear: both;
+    background: grey;
+    max-width: 100%;
+    margin: 0px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*
+*  ////  /////
+*  //    // //
+*  ////  /////
+*/ 
+
+
+#landing {
+    margin: 0px;
+    max-width: 100%;
+    height: 100%;
+    background: grey;
+    background-image: url('../pictures/contact-spread.jpg');
+}
+
+#head {
+    color: white;
+    padding: 250px;
+    font-size: 30px;
+}

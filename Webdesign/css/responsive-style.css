@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    background: black;
+}
+
+#header-image {
+    width: 100%;
+    height: 400px;
+    background: blue;
+    background-image: url("../pictures/ginger-ninja-2_1280-700.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    color: white;
+}
+
+#header-image h1{
+    font-family: serif;
+    font-weight: bold;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+#header-image p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#header-text {
+    text-align: center;
+    padding-top: 30px; 
+}
+
+#link-bar1 {
+    width: 100%;
+    height: 30px;
+    background: whitesmoke;
+    position: relative;
+    /*text-align: center;*/
+}
+
+#link-bar1 img {
+    height: 90px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 45%;
+    transition: transform 0.5s ease-in;
+}
+
+.icon-button img:hover {
+    transform: rotate(360deg);
+}
+
+#header-tab {
+    width: 100%;
+    /*height: 20px;*/
+    background: white;
+    padding: 15px 0px 15px;
+}
+
+.bar-link {
+    float: right;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+.bar-link-right {
+    float: left;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+#header-tab:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.bar-link:hover, .bar-link-right:hover {
+    color: white;
+    background: purple;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.panels li {
+    float: left;
+    position: relative;
+    display: block;
+    width: 25%;
+}
+
+.panels li div {
+    width: 100%;
+    padding: 50% 0;
+    text-align: center;
+}
+
+.panels .back {
+    transform: rotateY(90deg);
+}
+
+.panels .front {
+    position: absolute;
+}
+
+li:hover div.front {
+    animation: flip 0.3s ease-in forwards;
+}
+
+li:hover div.back{
+    animation: flip 0.2s 0.3s ease-out forwards reverse;
+}
+
+@keyframes flip {
+    0% { transform: rotateY(0deg) }
+    100%{ transform: rotateY(90deg)}
+}
+
+.icons {
+    margin-left: 26%;
+}
+
+.icons img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.icons li {
+    display: block;
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.icons div.front {
+    position: absolute;
+}
+
+.icons div.back {
+    transform: rotateX(90deg);
+}
+
+.icons li:hover div.front {
+    animation: turn 0.2s ease-in forwards;
+}
+
+.icons li:hover div.back {
+    animation: turn 0.2s 0.2s ease-out forwards reverse;
+}
+
+@keyframes turn {
+    0% { transform: rotateX(0deg)};
+    100% {transform: rotateX(90deg)};
+}
+
+.panels:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icons:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nice-bar {
+    width: 100%;
+    height: 400px;
+    background: white;
+    position: relative;
+}
+
+#box {
+    width: 60%;
+    height: 300px;
+    background: black;
+    position: absolute;
+    left: 20%;
+    top: 340px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 100px;
+}
+
+.test {
+    margin-top: 180px;
+    width: 100%;
+    height: 400px;
+    background: white;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
