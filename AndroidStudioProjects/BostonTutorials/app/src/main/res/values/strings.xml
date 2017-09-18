@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BostonTutorials</string>
+    <string name="bottom_text">Bottom Text</string>
+    <string name="top_text">Top Text</string>
+    <string name="top">Top</string>
+    <string name="bottom">Bottom</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="click_here">Click Here!</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="save_prompt">Click Button To save entry.</string>
+    <string name="start_new_activity">Start New Activity</string>
+</resources>

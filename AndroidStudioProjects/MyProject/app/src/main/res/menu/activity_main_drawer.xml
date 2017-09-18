@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/nav_addUser"
+            android:icon="@drawable/ic_add_circle_black_24dp"
+            android:title="@string/add_user_info" />
+        <item
+            android:id="@+id/nav_updateUser"
+            android:icon="@drawable/ic_update_black_24dp"
+            android:title="@string/update_user_info" />
+        <item
+            android:id="@+id/nav_myRides"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="@string/my_rides" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_payment_black_24dp"
+            android:title="@string/payment" />
+
+</menu>

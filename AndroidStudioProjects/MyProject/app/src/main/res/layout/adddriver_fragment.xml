@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="292dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="69dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/password" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="290dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="129dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/addDriverButton"
+        android:layout_width="203dp"
+        android:layout_height="58dp"
+        android:elevation="0dp"
+        android:onClick="addDriverClicked"
+        android:text="@string/add_driver"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:layout_below="@+id/addImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignEnd="@+id/name" />
+
+    <ImageView
+        android:id="@+id/addImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_add_a_photo_black_24dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/age"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/signInLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_here"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/age"
+        android:inputType="number"
+        android:layout_below="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_alignEnd="@+id/password" />
+
+    <TextView
+        android:id="@+id/addNewDriverBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/add_new_driver"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

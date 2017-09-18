@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signUpFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/signInName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/signUpemail"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/RegisterBanner"
+        android:layout_alignStart="@+id/signInPswd"
+        android:layout_marginTop="48dp" />
+
+    <EditText
+        android:id="@+id/signInPswd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/signUppassword"
+        android:inputType="textPassword"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:layout_below="@+id/signInPswd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/signInLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="67dp"
+        android:text="@string/already_registered_sign_in"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/RegisterBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:text="@string/register"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>
