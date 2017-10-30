@@ -1,11 +1,13 @@
 /** Attribution: The code to implement location services and updates
- * was adapted from "Location Strategies" on the Android Developer website,
- * unattributed author.
+ * was adapted from "Location Strategies" on the Android Developer website.
  * https://developer.android.com/guide/topics/location/strategies.html
  */
 
 /* TODO: get Google Map API key by following instructions at this link:
  * https://developers.google.com/maps/documentation/javascript/get-api-key
+ * The key will have to be declared in your manifest, and you'll have to rebuild
+ * your gradle files, probably. Do the steps in order or you'll be debugging
+ * for days (believe me).
  */
 
 import android.content.pm.PackageManager;
@@ -15,16 +17,23 @@ import android.location.LocationManager;
 import com.google.android.gms.maps.model.LatLng;
 import static android.content.Context.LOCATION_SERVICE;
 
+// This int can be anything except 0 (you may have multiple permissions)
 private static final int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1;
+
+// Time constants so we don't have keep dealing with milliseconds
 private static final int ONE_SECOND = 1000;
 private static final int ONE_MINUTE = 60 * ONE_SECOND;
 
-/* TODO: Set your accuracy constraints by changing the next two variables */
-private static final int DEFAULT_RESOLUTION = ONE_SECOND;
-private static final int DEFAULT_DISTANCE_RESOLUTION = 1;
-
+/* TODO: Set your accuracy constraints by changing the next two variables.
+ * Note: these resolutions were set up for an app which is tracking someone's
+ * walk. They're probably way too accurate for a car, bus, or bike app.
+*/
+private static final int DEFAULT_RESOLUTION = ONE_SECOND; // in milliseconds
+private static final int DEFAULT_DISTANCE_RESOLUTION = 1; // in meters
 
 private Location currentBestLocation;
+private LocationManager locationManager;
+private LocationListener locationListener;
 
 @Override
 public void onCreate(Bundle savedInstanceState) {
@@ -61,9 +70,11 @@ public void onRequestPermissionsResult(int requestCode,
     }
 }
 
+/* Releases location resources */
 @Override
 public void onDestroy() {
     super.onDestroy();
+    // You're going to be very unpopular if you don't do this...
     if(locationManager != null) locationManager.removeUpdates(locationListener);
 }
 
@@ -74,6 +85,7 @@ public void initiateLocation() {
     locationListener = new LocationListener() {
         @Override
         public void onLocationChanged(Location location) {
+            // Listener for location change callback
             updateCurrentLocation(location);
         }
 
@@ -87,9 +99,11 @@ public void initiateLocation() {
 
         @Override
         public void onProviderDisabled(String s) {
+            // Handles GPS turned off on device
             noLocationServices();
         }
     };
+    // Ask the device for location updates at specified frequency
     try {
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
                 DEFAULT_LOCATION_RESOLUTION,
@@ -106,8 +120,8 @@ public void initiateLocation() {
 
 private void noLocationServices() {
     /* TODO: The code below simply exits the app. If you want to do something
-     * different (such as run at diminished capacity) replace the rest of this
-     * method with something else)
+     * different (such as run at diminished capacity or prompt the user to turn
+     * on GPS) replace the rest of this function with something else)
     */
     new AlertDialog.Builder(getActivity())
             .setMessage("Cannot run without location services.")
